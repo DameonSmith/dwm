@@ -42,6 +42,7 @@ static const Rule rules[] = {
 
 /* layout(s) */
 #include "layouts.c"
+#include "tcl.c"
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
@@ -52,6 +53,7 @@ static const Layout layouts[] = {
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 	{ "HHH",      grid },
+	{ "H||H",     tcl },
 	{ NULL,       NULL },
 };
 
